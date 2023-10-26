@@ -71,6 +71,7 @@ const Settings = ref({
   })
 })
 const Data = ref({
-  leadsValue: 20
+  leadsValue: 20,
+  placed: ["15"]
 })
 </script>
