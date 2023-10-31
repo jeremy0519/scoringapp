@@ -1,8 +1,8 @@
-import { reactive } from 'vue'
+import { ref} from 'vue'
 import { computed } from 'vue'
 
 
-export const Settings = reactive({
+export const Settings = ref({
     isBlue: 1,
     color: computed(() => {
         return Settings.value.isBlue ? "text-primary" : "text-danger"
@@ -12,7 +12,7 @@ export const Settings = reactive({
     })
 })
 
-export const Data = reactive({
+export const Data = ref({
     leadsValue: 0,
     A: 0,
     B: 0,

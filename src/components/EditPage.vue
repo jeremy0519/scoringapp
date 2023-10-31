@@ -218,10 +218,12 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { Data, Settings } from './Storage.js'
 const viewportWidth = document.body.clientWidth;
 const cubebianchang = Math.min(viewportWidth / 6, 100);
 const cubestyle = "width:" + cubebianchang + "px; height:" + cubebianchang + "px"
 const cubelongstyle = "width:" + cubebianchang * 5 + "px"
+/*
 const Settings = ref({
   isBlue: 1,
   color: computed(() => {
@@ -231,6 +233,7 @@ const Settings = ref({
     return Settings.value.isBlue ? "蓝色" : "红色"
   })
 })
+
 const Data = ref({
   leadsValue: 0,
   A: 0,
@@ -267,6 +270,7 @@ const Data = ref({
     loc55: { isPlaced: false, color: computed(() => Data.value.placed.loc55.isPlaced ? "d-inline-block col bg-warning bg-opacity-75" : "d-inline-block col bg-success bg-opacity-75") },
   }
 })
+*/
 function handleChangeLeague() {
   Settings.value.isBlue = !Settings.value.isBlue;
   Data.value.leadsValue = -Data.value.leadsValue;
