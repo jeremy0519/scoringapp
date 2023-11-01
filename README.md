@@ -40,8 +40,16 @@ Scoring App用于在FRC比赛的**赛场**上，可以在Coach与观众之间同
 
 ```
 npm install
+```
+
+```
 npm run dev
-npm run build
+```
+
+或
+
+```
+npm run dev
 ```
 
 ## To Develop
