@@ -45,7 +45,6 @@
     </div>
   </div>
 
-
   <div class="col-auto">
     <label for="leads" class="form-label">分差：{{ Data.leadsValue }}</label>
   </div>
@@ -207,17 +206,11 @@
     </form>
   </div>
 
-  <div>
-    {{ Data }}
-  </div>
-  <div>
-    {{ Settings }}
-  </div>
 </template>
 
 
 <script setup>
-import { ref, computed } from 'vue'
+//import { ref, computed } from 'vue'
 import { Data, Settings } from './Storage.js'
 const viewportWidth = document.body.clientWidth;
 const cubebianchang = Math.min(viewportWidth / 6, 100);
@@ -271,6 +264,7 @@ const Data = ref({
   }
 })
 */
+
 function handleChangeLeague() {
   Settings.value.isBlue = !Settings.value.isBlue;
   Data.value.leadsValue = -Data.value.leadsValue;
